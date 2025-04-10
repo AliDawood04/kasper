@@ -696,3 +696,150 @@ content: attr(data-progrees);
 
 }
 /* End Skills */
+/* Start Quote */
+.quote{
+    background-image: url(../images/quote.webp);
+    background-size: cover;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+.quote::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 ,.7);
+}
+.quote .container{
+    position: relative;
+}
+.quote q{
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;
+}
+q::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d";
+    font-weight: 900;
+    margin-right:5px ;
+    font-size: 20px;
+
+}
+q::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f10e";
+    font-weight: 600;
+    font-size: 20px;
+}
+/* End Quote */
+/* Start Pricing */
+.pricing .plans{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+.pricing .plans .plan{
+    background-color: #fcfcfc;
+    text-align: center;
+}
+.pricing .plans .plan .head{
+padding: 40px 20px ;
+border-top: solid 1px var(--main-color);
+border-bottom: solid 1px var(--main-color);
+}
+.pricing .plans .plan .head h3{
+font-weight: normal;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+.pricing .plans .plan .head span{
+font-size: 60px;
+font-weight: bold;
+position: relative;
+}
+.pricing .plans .plan .head span::before{
+    content: "$";
+    position: relative;
+    font-size: 30px;
+    top: -38px;
+    left: -12px;
+}
+.pricing .plans .plan .head span::after{
+    content: "/Mo";
+    position: relative;
+    font-size: 15px;
+    left: 10px;
+}
+.pricing .plans .plan ul{
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan ul li{
+padding: 20px;
+position: relative;
+}
+.pricing .plans .plan ul li:not(:last-child)::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    position: absolute;
+    background-color: var(--main-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.pricing .plans .plan .foot a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    margin: 30px auto;
+}
+.pricing .contact-text{
+text-align: center;
+margin: 50px auto 20px;
+font-size: 20px;
+}
+.pricing .contact-link{
+display: block;
+width: fit-content;
+margin: 20px auto;
+background-color: var(--main-color);
+color: white;
+padding: 15px 30px;
+text-decoration: none;
+}
+
+/* End Pricing */
+/* Start subscripe */
+.subscripe{
+    background-image: url(../images/subscripe.jpeg);
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.subscripe::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    background-color: rgb(0 0 0 / 50%);
+}
+.subscripe .container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    z-index: 2;
+}
+@media (max-width:991px){
+    .subscripe .container{
+        flex-direction: column;
+    }
+}
+/* End   subscripe */
