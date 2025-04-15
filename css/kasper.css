@@ -822,7 +822,7 @@ text-decoration: none;
     position: relative;
     color: white;
 }
-.subscripe::after{
+.subscripe::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -835,11 +835,180 @@ text-decoration: none;
     display: flex;
     position: relative;
     align-items: center;
-    z-index: 2;
 }
-@media (max-width:991px){
+@media (max-width: 991px){
     .subscripe .container{
         flex-direction: column;
     }
 }
+.subscripe form{
+    display: flex;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+}
+.subscripe form i{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+left: 20px;
+font-size: 25px;
+}
+.subscripe form input[type="email"]{
+border: 1px solid var(--main-color);
+border-right: none;
+background-color: transparent;
+padding: 20px 20px 20px 60px;
+caret-color: var(--main-color);
+width: calc(100% - 30px);
+}
+.subscripe form input[type="submit"]{
+width: 130px;
+background-color: var(--main-color);
+color: white;
+padding: 10px 20px;
+border: 1px solid var(--main-color);
+border-left: none;
+text-transform: uppercase;
+}
+.subscripe form ::placeholder{
+    color: whitesmoke;
+}
+.subscripe p{
+line-height: 1.5;
+margin-left: 50px;
+}
+@media (max-width: 991px){
+    .subscripe p{
+    margin: 30px 0 0;
+    text-align: center;
+    }
+}
 /* End   subscripe */
+/* Start  Contact */
+.contact .content{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:768px){
+    .contact .content{
+        flex-direction: column;
+    }
+}
+.contact .content form{
+    flex-basis: 70%;
+}
+.contact .content form .main-input{
+    padding: 20px;
+    display: block;
+    border: 1px solid var(--main-color);
+    margin-bottom: 30px;
+    width: 100%;
+}
+.contact .content form .main-input:focus{
+    outline: none;
+}
+.contact .content form textarea.main-input{
+    height: 200px;
+}
+.contact .content form input[type="submit"]{
+background-color: var(--main-color);
+color: white;
+padding: 20px;
+border: none;
+display: flex;
+margin-left: auto;
+text-transform: uppercase;
+cursor: pointer;
+}
+.contact .content .info{
+    flex-basis: 25%;
+}
+@media (max-width:768px){
+    .contact .content .info{
+        order: -1;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+.contact .content .info h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+}
+.contact .content .info .phone{
+    display: block;
+    color: #777;
+    margin-bottom: 15px;
+}
+.contact .content .info h4:nth-of-type(2){
+    margin-top: 70px;
+}
+@media (max-width:768px){
+    .contact .content .info h4:nth-of-type(2){
+        margin-top: 30px;
+    }
+}
+.contact .content .info address{
+color: #777;
+line-height: 2;
+text-transform: capitalize;
+}
+/* End  Contact */
+/* Start Footer */
+.footer{
+    padding-top:20px ;
+    padding-bottom: 20px;
+    background-image: url(../images/subscripe.jpeg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.footer .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.footer .logo h6{
+    font-size: 20px;
+    color: var(--main-color);
+}
+.footer img{
+    width: 80px;
+}
+.footer::before{
+    content: "";
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 0.5);
+}
+.footer .container{
+    position: relative;
+}
+.footer p:not(.copyright){
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid;
+    width: fit-content;
+    margin: 20px auto;
+}
+.footer .social-icons i {
+    font-size: 25px;
+    margin: 15px 20px;
+    color: var(--main-color);
+}
+.footer .copyright{
+    margin: 50px;
+}
+.footer .copyright span{
+font-weight: bold;
+color: var(--main-color);
+}
+/* End Footer */

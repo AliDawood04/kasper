@@ -24,12 +24,12 @@
             <nav>
                 <i class="fas fa-bars toggle-menu" ></i>
                 <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">pricing</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#landing">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="form">
                     <i class="fa fa-search"></i>
@@ -39,7 +39,7 @@
     </header>
     <!-- End Header -->
     <!-- Start Landing -->
-    <div class="landing">
+    <div class="landing" id="landing">
         <div class="overlay"></div>
         <div class="text">
             <div class="content">
@@ -58,7 +58,7 @@
     <!-- End Landing -->
     <!-- Start Services -->
         
-    <div class="services section">
+    <div class="services section" id="services">
         
         <div class="container">
             <div class="main-heading ">
@@ -116,7 +116,7 @@
     </div>
     <!-- End Design -->
     <!-- Start Portfolio -->
-    <div class="portofolio section">
+    <div class="portofolio section" id="portfolio">
         <div class="container">
             <div class="main-heading ">
                 <h2> Portofolio</h2>
@@ -205,7 +205,7 @@
     <!-- End video -->
     
     <!-- Start About -->
-    <div class="about ">
+    <div class="about " id="about">
         <div class="container">
             <div class="main-heading">
                 <h2>About Us</h2>
@@ -309,7 +309,7 @@
     </div>
     <!-- End Quote -->
     <!-- Start Pricing -->
-    <div class="pricing section">
+    <div class="pricing section" id="pricing">
         <div class="container">
         <div class="main-heading">
             <h2>Pricing</h2>
@@ -387,14 +387,60 @@
         <div class="container">
             <form action="">
                 <i class="far fa-envelope fa-lg"></i>
-                <input type="email" name="mail">
+                <input type="email" name="mail" placeholder="Your Email">
                 <input type="submit" value="subscribe">
             </form>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, voluptatibus ipsa dolorum nulla, quisquam iusto cupiditate sint aliquam illum quibusdam accusantium repudiandae labore, beatae dolor ducimus. Maxime in deserunt qui?</p>
+            <p> aliquam illum quibusdam accusantium repudiandae labore, beatae dolor ducimus. Maxime in deserunt qui?</p>
 
         </div>
     </div>
         
-    <!-- start subscripe -->
+    <!-- End subscripe -->
+
+    <!-- Start Contact -->
+        <div class="contact section" id="contact">
+            <div class="container">
+                <div class="main-heading">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est consequuntur doloribus nihil modi perferendis, recusandae nam earum sit amet. Excepturi eum cumque temporibus eos id at ipsa incidunt sint.</p>
+                </div>
+                <div class="content">
+                    <form action="">
+                        <input class="main-input" type="text" name="name" placeholder="Your Name" >
+                        <input class="main-input" type="email" name="mail" placeholder="Your Email" >
+                        <textarea class="main-input" name="message" placeholder="Your Message" ></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                    <div class="info">
+                        <h4>Get in Touch</h4>
+                        <span class="phone">01212280770</span>
+                        <span class="phone">01212280770</span>
+                        <h4>Where we Are</h4>
+                        <address>
+                            awsome address 17<br>El Giza,B.M <br>01212280770 <br>EGY
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logoo.png" alt="logo">
+                    <h6>Kasper</h6>
+                </div>
+                <p>We Are Social</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-home"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <p class="copyright">&copy; 2025 <span>kasper</span>All Right Reserved</p>
+            </div>
+        </div>
+    <!-- End Footer -->
 </body>
 </html>
